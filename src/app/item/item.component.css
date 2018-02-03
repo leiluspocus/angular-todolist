@@ -1,0 +1,8 @@
+p {
+    color: red;
+    font-family: 'Comic Sans MS';
+}
+
+p.done {
+    text-decoration: line-through;
+}
