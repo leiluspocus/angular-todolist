@@ -42,7 +42,12 @@ export class TodolistService {
   }
 
   markAsDone(item: TodoListItem): void {
-    this.editItem(item.id, {isDone: true})
+    if ( item.isDone == true ) {
+      this.editItem(item.id, {isDone: false})
+    }
+    else {
+      this.editItem(item.id, {isDone: true})
+    }
   }
 
   saveData() : void {
